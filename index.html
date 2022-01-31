@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,500;2,400&display=swap"
+        rel="stylesheet">
+    <title>formulário Danki</title>
+</head>
+
+<body>
+    <main id="container">
+        <form action="">
+            <section class="section-page-index">
+                <fieldset>
+                    <legend>formulário danki</legend>
+                    <div class="field">
+                        <label class="button-files" for="file-curriculum-page-index-id">upload your CV</label>
+                        <input type="file" name="file-curriculum-page-index" id="file-curriculum-page-index-id">
+                    </div>
+                    <div class="field">
+                        <label for="first-name-page-index">first name</label>
+                        <input class="field-wrapper-form" type="text" name="first-name" id="first-name-page-index"
+                            required>
+                    </div>
+                    <div class="field">
+                        <label for="last-name-page-index">last name</label>
+                        <input class="field-wrapper-form" type="text" name="last-name" id="last-name-page-index"
+                            required>
+                    </div>
+                    <div class="field">
+                        <label for="email-page-index">email</label>
+                        <input class="field-wrapper-form" type="email" name="email" id="email-page-index" required>
+                    </div>
+                    <div class="field">
+                        <label for="tel-page-index">your number contact</label>
+                        <input class="field-wrapper-form" type="tel" name="number-contact" id="tel-page-index" required>
+                    </div>
+                    <div class="field">
+                        <label for="nacionality-page-index-id">your state</label>
+                        <select id="UF-page-index-id" name="UF-page-index">
+                            <option value="">Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espirito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </section>
+            <section class="section-page-index">
+                <fieldset>
+                    <legend>professional details</legend>
+                    <div class="field">
+                        <label for="experience-level-page-index">experience level</label>
+                        <div>
+                            <span>min</span>
+                            <span>máx</span>
+                        </div>
+                        <input type="range" name="experience-level" id="experience-level-page-index" required>
+                    </div>
+                    <div class="field">
+                        <label for="formation-page-index">your formation</label>
+                        <div class="formation-box">
+                            <div>
+                                <input type="radio" name="formation[]" value="finishing-high-school"> finishing high
+                                school
+                            </div>
+                            <div>
+                                <input type="radio" name="formation[]" value="high-school-completed"> high school
+                                completed
+                            </div>
+                            <div>
+                                <input type="radio" name="formation[]" value="attending-technical-education"> attending
+                                technical
+                                education
+                            </div>
+                            <div>
+                                <input type="radio" name="formation[]" value="technical-education-completed"> technical
+                                education
+                                completed
+                            </div>
+                            <div>
+                                <input type="radio" name="formation[]" value="attending higher education"> attending
+                                higher
+                                education
+                            </div>
+                            <div>
+                                <input type="radio" name="formation[]" value="University-education"> university
+                                education
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+            <section class="section-page-index">
+                <fieldset>
+                    <legend>your projects etc</legend>
+                    <div class="field">
+                        <label for="link-social-media-page-index">link your GitHub, linkedin, facebook, etc.</label>
+                        <input type="url" class="field-wrapper-form" id="link-social-media-page-index" required>
+                    </div>
+                    <div class="field">
+                        <label class="button-files" for="files-projects-client-id">show your best project</label>
+                        <input type="file" name="files-projects-client" id="files-projects-client-id">
+                    </div>
+                </fieldset>
+            </section>
+            <section class="section-page-index">
+                <fieldset>
+                    <legend>specifications and observations</legend>
+                    <div class="field">
+                        <label for="textarea-ID-page-index">observations?</label>
+                        <textarea name="textarea-name-page-index" id="textarea-ID-page-index" cols="30"
+                            rows="10"></textarea>
+                    </div>
+                    <input type="submit" name="acao" value="send!">
+                </fieldset>
+            </section>
+        </form>
+    </main>
+</body>
+
+</html>
